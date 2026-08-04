@@ -1,0 +1,39 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* on the corporate host
+host: https://www.cognitotx.com
+note: >-
+  No /.well-known/ documents are published. www.cognitotx.com is a Webflow-hosted
+  corporate marketing site; every /.well-known/* path returns HTTP 404 with a
+  Webflow "Invalid .well-known" HTML body (a real 404, not an SPA catch-all 200).
+  No WellKnown or SecurityTxt pointer is wired in apis.yml because no document
+  exists. Recorded so a later round does not re-probe blind.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+x-evidence:
+  fetched: '2026-08-02'
+  hosts_probed:
+  - www.cognitotx.com
+  subdomains_resolved: []
+  subdomains_nxdomain:
+  - api.cognitotx.com
+  - developer.cognitotx.com
+  - docs.cognitotx.com
+  - portal.cognitotx.com
+  - app.cognitotx.com
+  - my.cognitotx.com
+  - trust.cognitotx.com
+  - status.cognitotx.com
