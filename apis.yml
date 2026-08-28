@@ -12,6 +12,17 @@ description: 'Cognito Therapeutics is a clinical-stage neurotechnology company i
   and therapeutics company: it publishes a corporate and clinical-information website
   and no public developer program, API, SDK, or machine-readable contract of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/cognito-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/656e26ef10850ea6428fe577/65aa38ce4ab404d2ce4a2358_Opengraph-Cognito_(2).png
 x-type: company
 x-source: harvest:secondary-market
